@@ -11,7 +11,7 @@ $date = date("d-m-Y");
 
 $localPath = dirname(__FILE__).'/html/'.$date;
 
-$ftp = new FtpNew("ftp3.esv2.com");
+$ftp = new FtpNew("host");
 
 $ftpSession = $ftp->login("login", "password");
 
