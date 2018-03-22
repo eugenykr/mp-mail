@@ -7,7 +7,6 @@
  */
 
 require_once('vendor/autoload.php');
-//use nwtn\Respimg as Respimg;
 
 
 //ini_set('error_reporting', E_ALL);
@@ -49,11 +48,8 @@ include ('template_footer.php');
 $template_html = ob_get_contents();
 ob_end_clean();
 
-//do your stuff
 file_put_contents('html/'.$date.'/index.html', $template_html);
 echo $template_html;
-
-//print_r($_POST);
 
 function parse_data($url, $obj = 'image'){
 	$ch = curl_init($url);
