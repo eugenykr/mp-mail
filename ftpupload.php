@@ -13,7 +13,7 @@ $localPath = dirname(__FILE__).'/html/'.$date;
 
 $ftp = new FtpNew("ftp3.esv2.com");
 
-$ftpSession = $ftp->login("medmedia-ru", "krbVdYysj58KE4g");
+$ftpSession = $ftp->login("login", "password");
 
 if (!$ftpSession) die("Failed to connect.");
 
